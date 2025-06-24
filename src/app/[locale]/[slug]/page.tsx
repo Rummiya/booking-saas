@@ -1,12 +1,14 @@
 export default async function BusinessPage({
 	params,
 }: {
-	params: { slug: string };
+	params: Promise<{ slug: string }>;
 }) {
+	const { slug } = await params;
+
 	return (
 		<div className='container'>
 			{/* Страница какого-либо бизнеса */}
-			<h1>{params.slug}</h1>
+			<h1>{slug}</h1>
 		</div>
 	);
 }
