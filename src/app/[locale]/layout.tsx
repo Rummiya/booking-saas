@@ -8,6 +8,7 @@ import { routing } from '@/shared/i18n/routing';
 import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 
+import { StoreProvider } from '@/shared/providers/store-provider';
 import '@/shared/styles/globals.css';
 
 const geistSans = Geist({
@@ -54,7 +55,9 @@ export default async function LocaleLayout({ children, params }: Props) {
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<main className='bg-accent-foreground min-h-screen'>
-					<NextIntlClientProvider>{children}</NextIntlClientProvider>
+					<StoreProvider>
+						<NextIntlClientProvider>{children}</NextIntlClientProvider>
+					</StoreProvider>
 				</main>
 			</body>
 		</html>
