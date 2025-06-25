@@ -54,7 +54,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<main className='bg-accent-foreground min-h-screen'>
+				<main className='muted min-h-screen'>
 					<StoreProvider>
 						<NextIntlClientProvider>{children}</NextIntlClientProvider>
 					</StoreProvider>

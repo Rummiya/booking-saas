@@ -6,7 +6,7 @@ export default function Home() {
 
 	return (
 		<div>
-			<h1>{t('title')}</h1>
+			<h1 className='foreground'>{t('title')}</h1>
 			<Button variant={'outline'}>Зарегистрироваться</Button>
 		</div>
 	);
