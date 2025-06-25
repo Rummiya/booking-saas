@@ -4,7 +4,7 @@ import { hasLocale, Locale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';
 
-import { routing } from '@/shared/i18n/routing';
+import { routing } from '@/shared/libs/i18n/routing';
 import { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 

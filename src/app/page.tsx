@@ -1,4 +1,4 @@
-import { redirect } from '@/shared/i18n/navigation';
+import { redirect } from '@/shared/libs/i18n/navigation';
 import { Locale } from 'next-intl';
 
 type Props = {
