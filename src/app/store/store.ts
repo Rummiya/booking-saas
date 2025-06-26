@@ -1,10 +1,8 @@
-// @/shared/libs/store/store.ts
-
-// import auth from '@/features/auth/auth.slice';
+import auth from '@/features/auth/auth.slice';
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
 export const store = configureStore({
-  reducer: {},
+  reducer: { auth },
 });
 
 export type AppStore = typeof store;
