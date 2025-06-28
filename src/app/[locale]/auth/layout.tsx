@@ -1,7 +1,11 @@
 export default function layout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return <div>{children}</div>;
+  return (
+    <div className="flex flex-col items-center justify-center h-screen w-full">
+      {children}
+    </div>
+  );
 }
