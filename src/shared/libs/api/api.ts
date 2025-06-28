@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery, retry } from '@reduxjs/toolkit/query/react';
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: `${process.env.BASE_URL}/api`,
+  baseUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api`,
   prepareHeaders: (headers, { getState }) => {
-    const token = (getState() as RootState).user.token || localStorage.getItem('token');
+    const token = (getState() as RootState).auth.token || localStorage.getItem('token');
 
     if (token) {
       headers.set('authorization', `Bearer ${token}`);
