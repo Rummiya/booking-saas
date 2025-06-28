@@ -1,5 +1,7 @@
 export interface AuthState {
   token: string | null;
+  username: string | null;
+  role: string | null;
 }
 
 export interface RegisterForm {
