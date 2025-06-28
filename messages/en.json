@@ -1,5 +1,34 @@
 {
-	"home": {
-		"title": "HomePage"
-	}
+  "home": {
+    "title": "HomePage"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+
+    "register": {
+      "title": "Registration",
+      "desc": "Create an account for further work",
+      "button": "Register",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Log in",
+      "validation": {
+        "email": "Email is invalid",
+        "password": "Password must be at least 8 characters",
+        "firstName": "Enter your name",
+        "phone": "Enter 9 numbers without spaces or symbols"
+      }
+    },
+    "login": {
+      "title": "Log in",
+      "desc": "Log in for further work",
+      "button": "Log in",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Register",
+      "validation": {
+        "email": "Invalid email",
+        "password": "Password is required"
+      }
+    }
+  }
 }
